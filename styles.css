@@ -1,0 +1,58 @@
+/* nav class  - Just 'Latitude'*/
+.navbar-brand{
+background-color:rgb(62, 204, 161);
+font-weight: bold;
+color: white;
+float:right;
+padding:10px 0 10px 1;
+margin-top: 30%;
+margin:10px;
+}
+
+
+/*formatting for 'Summary' & 'Visualization' headers  */
+h1 {
+    margin-bottom: 30px;
+    margin-top: 10%;
+    font-size:60px;
+    font-weight: bold;
+    color:rgb(62, 204, 161);
+    text-align: left;
+}
+/* formatting for items in left white box */
+p {
+    font-size: medium;
+    font-weight: 500;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+  }
+/* entire webpage formatting */
+body{
+    background-color: grey;
+}
+
+.main-column{
+    margin-top: 2%;
+}
+.left-column{
+    margin-left: -5%;
+    margin-right: 5%;
+    width: auto;
+    background-color: white;
+}
+.right-column{
+    padding: -30%;
+    width: auto;
+    background-color: white;
+    
+}
+@media only screen and (max-width: 767px) {
+    .responsive-navbar-header {
+      background-color: rgb(62, 204, 161);
+    }
+  }

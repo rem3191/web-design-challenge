@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Tab name -->
+    <meta charset="UTF-8">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="responsive-navbar-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light responsive-navbar-header">
+            <a class="navbar-brand" href="#">Latitude</a>
+            <!-- hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- dropdown menu on 'Plots' -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <!-- dropdown menu options -->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="maxTemp.html" target="_blank">Max Temperature</a>
+                                <a class="nav-link" href="humidity.html" target="_blank">Humidity</a>
+                                <a class="nav-link" href="cloudiness.html" target="_blank">Cloudiness</a>
+                                <a class="nav-link" href="windspeed.html" target="_blank">Wind Speed</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="comparisons_page.html" target="_blank">Comparison <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data_page.html" target="_blank">Data</a>
+                    </li>
+                </ul>
+            </div>
+
+            </a>
+        <!-- </div> -->
+        </nav>
+    </div>
+    <!-- EVERYTHING ABOVE THIS IS COMMON -->
+
+
+    <!-- left white box & image -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 main-column left-column">
+                <h1>Summary: 
+                    <br>
+                    Latitude Vs. X</h1>
+                <hr size="8" width="100%" color:rgb(231, 225, 224)>
+                <img src="https://raw.githubusercontent.com/rem3191/python-api-challenge/master/Images/Latitude_Vs._Max_Temperature.png"
+                    alt="Latitude Vs. Max Temp" />
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled data from the OpenWeatherAPI to assemble a data set on
+                    over 500 cities. </h2>
+                <p>After assembling the data set, we used matplotlib to plot various aspects of the weather versus the
+                    latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This
+                    site provides the source data and visualizations created as part of the analysis, as well as
+                    explanations and descriptions of any trends and correlations witnessed.</h3>
+            </div>
+            
+            <div class="col-md-6 main-column right-column">
+                <h1>Visualizations</h1>
+                <hr size="8" width="100%" color:rgb(231, 225, 224)>
+                <a href="maxTemp.html"
+                    alt="Latitude Vs. Max Temp" target="_blank">
+                    <img src="https://raw.githubusercontent.com/rem3191/python-api-challenge/master/Images/Latitude_Vs._Max_Temperature.png"
+                        alt="Latitude Vs. Max Temp" />
+                </a>
+                <a href="cloudiness.html"
+                    alt="Latitude Vs. Cloudiness" target="_blank">
+                    <img src="https://raw.githubusercontent.com/rem3191/python-api-challenge/master/Images/Latitude_Vs._Cloudiness.png"
+                        alt="Latitude Vs. Cloudiness" />
+                </a>
+                <a href="windspeed.html"
+                    alt="Latitude Vs. Wind Speed" target="_blank">
+                    <img src="https://raw.githubusercontent.com/rem3191/python-api-challenge/master/Images/Latitude_Vs._Wind_Speed.png"
+                        alt="Latitude Vs. Wind Speed" />
+                </a>
+                <a href="humidity.html"
+                    alt="Latitude Vs. Humidity" target="_blank">
+                    <img src="https://raw.githubusercontent.com/rem3191/python-api-challenge/master/Images/Latitude_Vs._Humidity.png"
+                        alt="Latitude Vs. Humidity" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
